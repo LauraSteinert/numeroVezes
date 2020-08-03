@@ -1,0 +1,17 @@
+/* Escreva um método chamado contagem1 que receba como parâmetro um arranjo de inteiros chamado valores e um inteiro chamado x e retorna o número de vezes que 
+o valor x aparece dentro do arranjo valores. */
+class numeroDeVezes{
+
+  static int contagem1(int [] valores, int x){
+		int cont=0;
+		for(int i=0; i<valores.length; i++){
+			 if( valores[i] ==x)
+				cont++;
+		} 
+		return(cont);
+	}
+public static void main(String[]args){
+    int []valores = {1,2,3,3,4};
+    contagem1(valores,3);
+}
+}
